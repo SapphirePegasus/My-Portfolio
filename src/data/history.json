@@ -1,0 +1,28 @@
+[
+  {
+    "role": "Senior Software Engineer",
+    "organisation": "SigiloTech Pvt Ltd",
+    "startDate": "Nov, 2021",
+    "endDate": "Present",
+    "experiences": [
+      "PowerApps, Power Automate, Dynamic 365, Virtual Agents",
+      "Lead developer on multiple projects",
+      "Lead AI engineer training and creating AI models",
+      "Integrating APIs with Power Platform Applications"
+    ],
+    "imageSrc": "/history/sigilotech.webp"
+  },
+  {
+    "role": "Freelancer Full Stack Developer",
+    "organisation": "Social Connections",
+    "startDate": "Aug, 2019",
+    "endDate": "Jan, 2020",
+    "experiences": [
+      "React, Node, MongoDB, MySQL, Java, Oracle",
+      "Worked with large scale teams on various webapps",
+      "Backend engineer, improving efficiency of sites",
+      "Designed multiple UI for various clients"
+    ],
+    "imageSrc": "/history/freelancer.webp"
+  }
+]

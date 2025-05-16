@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Syke",
+    "imageSrc": "projects/syke.jpg"
+  },
+  {
+    "title": "Unilever",
+    "imageSrc": "projects/unilever.png"
+  },
+  {
+    "title": "Unicef",
+    "imageSrc": "projects/unicef.png"
+  },
+  {
+    "title": "EasyJet",
+    "imageSrc": "projects/easyjet.png"
+  },
+  {
+    "title": "Therme",
+    "imageSrc": "projects/therme.png"
+  },
+  {
+    "title": "Twentysix",
+    "imageSrc": "projects/twentysix.png"
+  },
+  {
+    "title": "Astro",
+    "imageSrc": "projects/astro.png"
+  },
+  {
+    "title": "YouGov",
+    "imageSrc": "projects/yougov.png"
+  },
+  {
+    "title": "Brainbee",
+    "imageSrc": "projects/brainbee.png"
+  },
+  {
+    "title": "Lexo",
+    "imageSrc": "projects/lexo.png"
+  },
+  {
+    "title": "Ariwell",
+    "imageSrc": "projects/ariwell.png"
+  },
+  {
+    "title": "WSNA",
+    "imageSrc": "projects/wsna.png"
+  }
+]

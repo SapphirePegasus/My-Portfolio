@@ -1,0 +1,45 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 35, 60, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.centerText {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: "Body", sans-serif;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  color: #ffffff;
+  font-size: 10rem;
+  font-family: "Body";
+}
+
+@media (max-width: 768px) {
+  .progress {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: "Body";
+  }
+}

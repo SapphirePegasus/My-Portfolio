@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Heading";
+  src: url("/fonts/alegreya.regular.ttf");
+}
+
+@font-face {
+  font-family: "Body";
+  src: url("/fonts/zain.regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #366896 #00065c;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #00065c;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #366896;
+  border-radius: 100px;
+  border: 20px solid #000000;
+}

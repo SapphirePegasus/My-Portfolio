@@ -1,0 +1,18 @@
+.footercont{
+    background-color: rgb(21, 26, 54);
+    color: white;
+    font-family: "Body";
+    font-size: 1.25rem;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footercont{
+        font-size: 0.9rem;
+    }
+}

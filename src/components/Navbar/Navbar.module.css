@@ -1,0 +1,221 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  z-index: 1000;
+  font-family: "Body";
+}
+
+.logocont {
+  display: flex;
+  z-index: 99;
+  margin-right: 116.93px;
+  align-items: center;
+}
+
+.logoimg {
+  width: 50px;
+  height: auto;
+}
+
+/* Desktop navigation menu with glassmorphism effect */
+.menu {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 0.5rem 0rem;
+  backdrop-filter: blur(50px);
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 100px;
+}
+
+/* The pseudo-element acts as the sliding background highlight */
+.menu ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 161, 249, 0.3);
+  border-radius: 100px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+/* On hover, the background slides in */
+.menu ul li a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Optionally, change the text color on hover for contrast */
+.menu ul li a:hover {
+  color: #fff;
+}
+
+/* Active state for menu items (applied on scroll) */
+.active a {
+  color: #fff;
+}
+
+.actionbuttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Mobile Menu Icon – hidden on desktop */
+.mobileMenuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile full-screen menu overlay */
+.mobileMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.5s ease forwards;
+  z-index: 999;
+  font-family: "Body";
+}
+
+/* Mobile menu list styling with fade-in animation */
+.mobileMenuList {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.mobileMenuList li {
+  margin: 1rem 0;
+}
+
+.mobileMenuList li a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.mobileMenuList li a:hover {
+  color: #f0f0f0;
+}
+
+/* Social icons styling for mobile overlay */
+.socials {
+  display: flex;
+  gap: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #f0f0f0;
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-out animation keyframes */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Responsive Styles */
+
+/* Tablet view 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+    height: 60px;
+  }
+  .menu {
+    padding: 0.3rem 0.5rem;
+  }
+  .menu ul li {
+    margin: 0 0.5rem;
+  }
+}*/
+
+/* Mobile view */
+@media (max-width: 768px) {
+  /* Hide desktop menu and CTA on mobile */
+  .menu,
+  .cta,
+  .actionbuttons {
+    display: none;
+  }
+  .mobileMenuIcon {
+    display: block;
+  }
+  /* Adjust navbar padding for mobile */
+  .navbar {
+    padding: 0 1rem;
+  }
+}
