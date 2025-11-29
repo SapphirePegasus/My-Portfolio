@@ -59,7 +59,7 @@ export default function Hero() {
           <div className={styles.tooltip}>Email</div>
         </a>
 
-        <a
+        {/*<a
           className={styles.herosocialsicons}
           href="https://www.upwork.com/freelancers/~01debd80b638a1cdaf?mp_source=share"
           target="_blank"
@@ -84,7 +84,7 @@ export default function Hero() {
             </g>
           </svg>
           <div className={styles.tooltip}>Upwork</div>
-        </a>
+        </a>*/}
 
         <a
           className={styles.herosocialsicons}
@@ -261,3 +261,4 @@ export default function Hero() {
     </section>
   );
 }
+
