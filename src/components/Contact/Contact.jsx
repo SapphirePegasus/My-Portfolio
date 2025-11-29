@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Contact.module.css";
-import Ballpit from "../SpecialEffects/BallPit";
+import Ballpit from "../SpecialEffects/Ballpit";
 import useIsMobile from "../../utils/useIsMobile";
 import { useToggle } from "../../utils/performanceToggle";
 
@@ -268,4 +268,5 @@ export default function Contact() {
     </section>
   );
 }
+
 
