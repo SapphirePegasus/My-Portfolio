@@ -60,7 +60,7 @@ export default function Contact() {
             {copied && <span className={styles.tooltip}>Copied!</span>}
           </li>
 
-          <li className={styles.link}>
+          {/*<li className={styles.link}>
             <svg
               fill="#ffffff"
               width="28px"
@@ -86,7 +86,7 @@ export default function Contact() {
             >
               Upwork - Prittam Bhattacharyya
             </a>
-          </li>
+          </li>*/}
 
           <li className={styles.link}>
             <svg
@@ -268,3 +268,4 @@ export default function Contact() {
     </section>
   );
 }
+
